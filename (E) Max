@@ -1,0 +1,30 @@
+ 
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+ 
+ 
+	int maxx = 0;
+	int n;
+	cin >> n;
+	int numbers;
+ 
+	for (int i = 0; i <= n; i++)
+	{
+		cin >> numbers;
+		if (numbers > maxx)
+		{
+			maxx=numbers ;
+		}
+	}
+		cout << maxx;
+ 
+	
+	
+}
