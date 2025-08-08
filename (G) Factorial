@@ -1,0 +1,31 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+	int t;
+	cin >> t;
+	int n;
+
+
+	for (int i = 1; i <= t; i++)
+	{
+		cin >> n;
+		long long factorial = 1;
+
+		for (int i = 1; i <= n; i++)
+
+		{
+			factorial = factorial * i;
+		}
+
+		cout << factorial<<endl;
+	}
+
+}
+
