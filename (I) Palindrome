@@ -1,0 +1,35 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+	
+
+
+
+
+
+int main()
+{
+	string  n;
+	cin >> n;
+
+	string reversed =  n;
+	
+    reverse(n.begin(), n.end());
+	cout << stoi(n)<<endl;
+	if (n == reversed)
+	{
+		cout << "YES"<<endl;
+	}
+	else
+	{
+		cout << "NO";
+	}
+
+
+}
