@@ -1,0 +1,29 @@
+ 
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+    
+    int n;
+    cin >> n;
+   
+    if (n > 2)
+    {
+        for (int i = 2; i <= n; i+=2)
+        {
+            cout << i << endl;
+            
+        }
+        
+    }
+    else
+    {
+        cout << -1;
+    }
+ 
+}
