@@ -1,0 +1,28 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+int main()
+{
+	int a, b;
+	cin >> a >> b;
+	int maxx = max(a, b);
+	
+	for (int i = maxx; i >= 1; i--)
+	{
+		if (a % i == 0 && b % i == 0)
+		{
+			cout << i<<endl;
+			break;
+		}
+	}
+
+
+	
+}
