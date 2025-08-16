@@ -1,0 +1,56 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+
+
+int main() 
+{
+	int a, b;
+	cin >> a >> b;
+
+	bool found = false;
+
+	for (int i = a; i <= b; i++)
+	{
+		int number = i;
+		bool lucky = true;
+
+		if (number == 0)
+		{
+			lucky = false;
+		}
+
+		while (number > 0)
+		{
+			int digit = number % 10;
+			if (digit != 4 && digit != 7)
+			{
+				lucky = false;
+				break;
+			}
+				number /= 10;
+			
+		}
+			if (lucky)
+			{
+				cout << i<<" ";
+				found = true;
+			}
+
+
+			if (!found)
+			{
+				cout << -1;
+			}
+
+		}
+	
+  
+}
