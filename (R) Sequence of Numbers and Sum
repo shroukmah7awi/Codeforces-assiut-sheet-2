@@ -1,0 +1,40 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+
+int main()
+{
+	int n,m;
+	
+	while(cin >> n >> m)
+	{
+		if (m <= 0 || n <= 0)
+		{
+			break;
+		}
+
+		int sum = 0;
+		int start = min(n, m);
+		int end = max(n, m);
+
+
+		for (int i = start; i <= end; i++)
+		{
+			cout << i << " ";
+			sum += i;
+		}
+		cout << "sum =" << sum;
+		cout << endl;
+	}
+
+
+
+}
+	
