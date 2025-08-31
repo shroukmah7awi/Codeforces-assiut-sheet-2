@@ -1,0 +1,38 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+
+int main()
+{
+	int t;
+	cin >> t;
+	while (t--)
+	{
+		int n, m;
+		cin >> n >> m;
+
+		int sum = 0;
+		int start = min(n, m);
+		int end = max(n, m);
+
+		for (int i = start+1; i <= end; i++)
+		{
+			if (i % 2 != 0)
+			{
+				sum += i;
+			}
+		}
+			cout << sum;
+			cout << endl;
+	}
+
+	
+
+}
