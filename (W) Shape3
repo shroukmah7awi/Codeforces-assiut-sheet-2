@@ -1,0 +1,60 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+
+int main()
+{
+	int n;
+	cin >> n;
+
+	int a = 1;
+	int b = n - 1;
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < b; j++)
+		{
+			cout << " ";
+		}
+		for (int j = 0; j < a; j++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+		b--;
+		a += 2;
+	}
+
+
+
+	int c = 0;
+	int d = 2*n - 1;
+
+
+	for (int i =n; i >0; i--)
+	{
+		for (int j =0; j<c ; j++)
+		{
+			cout << " ";
+		}
+		for (int j =0; j <d; j++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+		c++;
+		d -= 2;
+
+	}
+}
+
+
+
+	
