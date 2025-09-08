@@ -1,0 +1,38 @@
+
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+
+
+int main()
+{
+	int n, a, b;
+	cin >> n >> a >> b;
+	int sum = 0;
+
+	for (int i = 1; i <= n; i++)
+	{
+		int num = i;
+		int result=0;
+
+		while (num > 0)
+		{
+			result += num % 10;
+			num = num / 10;
+		}
+		if (result >= a && result <= b)
+		{
+			sum += i;
+		}
+	}
+	cout << sum;
+
+
+	
+
+}
